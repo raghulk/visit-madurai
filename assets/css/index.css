@@ -1,0 +1,68 @@
+body{
+    background-color: white;
+    margin-bottom: 0;
+}
+.welcome-image{
+    height: 90vh;
+    background-image: url("../images/madurai1-crop-new-tr.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+.topnav{
+    background-color: rgba(95,140,195,0.8);
+/*    display: none !important;*/
+}
+.text-in-image{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+    width: 80%;
+    color: white;
+    font-family: 'Lobster', sans-serif;
+}
+.content{
+    margin-top: 95vh;
+    margin-left: 5em;
+}
+#map{
+    height: 60vh;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.slideshow{
+    transition: transform .5s;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.slideshow:hover{
+    transform: scale(1.05);
+}
+.welcome-txt{
+    text-align: justify;
+}
+/*media queries*/
+@media screen and (max-width: 900px) {
+    .content{
+        display: block;
+        overflow-x: hidden;
+    }
+    .links{
+        display: block;
+        margin: auto;
+    }
+    .footer-info{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+.logo{
+    z-index: 1000000;
+}

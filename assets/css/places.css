@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+/*    margin-bottom: 2em;*/
+/*    overflow-x: hidden;*/
+}
+.main{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px !important;
+}
+.topnav{
+    background-color: rgba(95,140,195,0.9);
+    height: 5em;
+}
+.main h1{
+    text-align: center;
+}
+.place-image{
+    transition: transform .5s;
+    height: 300px;
+    width: 400px;
+/*    float: right;*/
+/*    clear: both;*/
+    flex: 1;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.place-image:hover{
+    transform: scale(1.05);
+}
+.place{
+    margin: 0 auto;
+    margin-left: 30px !important;
+/*    width: 80%;*/
+    
+/*    position: relative;*/
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content: center;*/
+    padding: 6em;
+    padding-top: 2em;
+}
+.place p{
+    width: 80%;
+    text-align: justify
+    /*    margin-right: 50px;*/
+}
+.place2{
+    margin: 0 auto;
+    margin-left: 30px !important;
+/*    width: 80%;*/
+    
+/*    position: relative;*/
+    display: flex;
+/*    align-items: center;*/
+/*    justify-content: center;*/
+    padding: 6em;
+    padding-top: 2em;
+}
+.place2 p{
+    width: 80%;
+    text-align: justify
+    /*    margin-right: 50px;*/
+}
+/*
+.place a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.place a:hover{
+    text-decoration: underline;
+}
+*/
+.text{
+    flex: 3;
+}
+.text2{
+    flex: 3;
+    margin-left: 4em;
+    order: 2;
+}
+.text p{
+    width: 90%;
+}
+.text2 p{
+    width: 100%;
+}
+
+.maps-img{
+    width: 80vw;
+    height: 80vh !important;
+    align-items: center;
+    transition: transform .5s;
+    overflow: hidden !important;
+    display: block;
+    flex: none;
+}
+.maps{
+    margin-left: 8em;
+    width: 80vw;
+/*    height: 80vh !important;*/
+/*    max-height: 80vh;*/
+    overflow: hidden;
+}
+.div-img-container{
+    max-height:80vh;
+    width: 80vw;
+    overflow: hidden;
+}
+.history p{
+    margin: 0 auto;
+    margin-left: 30px !important;
+    width: 80%;
+    text-align: justify;
+/*    width: 80%;*/
+    
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+    padding: 1.2em;
+    padding-left: 3em;
+    padding-right: 0;
+/*    padding-top: 2em;*/
+}
+.hist-txt p{
+    width: 95%;
+}
+.hist-img{
+    height: 300px;
+    width: 400px;
+/*    flex: 1;*/
+    transition: transform .5s;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.hist-img:hover{
+    transform: scale(1.05);
+}
+
+.txt-img{
+    flex: 3;
+}
+.history-div{
+    margin: 0;
+    margin-left: 0px !important;
+    width: 85%;
+    
+/*    position: relative;*/
+    display: flex;
+/*
+    align-items: flex-start;
+    justify-content: flex-start;
+*/
+/*    padding: 6em;*/
+/*    padding-top: 2em;*/
+}
+.img-last-hist{
+    height: 300px;
+    width: 400px;
+    transition: transform .5s;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.img-last-hist:hover{
+    transform: scale(1.05);
+}
+.hist-div-img{
+    margin-left: 5em;
+/*    width:100%;*/
+/*
+    width:400px;
+    height:300px;
+    max-width: 400px;
+*/
+    display: flex;
+    justify-content: center;
+    /*
+    display: inline-block;
+    position: relative;
+    left: 30vw;
+*/
+}
+.maps img:hover{
+    transform: scale(1.06);
+}
+
+@media screen and (max-width: 1050px) {
+    .history-div{
+        display: block;
+        flex: none;
+    }
+    .hist-txt{
+        width: 100%;
+/*        display: block;*/
+/*        flex: none;*/
+    }
+    .hist-txt p{
+        width: 95%;
+    }
+    
+    .hist-div-img{
+/*        margin-left: 30px;*/
+/*        padding: 1.2em;*/
+/*        width: 90%;*/
+/*        margin-left: 0;*/
+        display: flex;
+/*        width: 80%;*/
+/*        margin: 0 auto;*/
+        align-items: center;
+        justify-content: center;
+/*        overflow-x: hidden;*/
+    }
+    .hist-img{
+/*        flex: 1;*/
+    }
+    .img-last-hist{
+/*        flex: 1;*/
+    }
+}
+
+@media screen and (max-width: 620px){
+    .main{
+        width:100%;
+    }
+    .history{
+        width: 100%;
+    }
+    .history p{
+        padding: 1em;
+    }
+    .hist-div-img{
+        margin-left: 3em;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 950px){
+    .place{
+        display: block;
+        padding: 2em;
+    }
+    .place2{
+        display: block;
+        padding: 2em;
+    }
+    .text2{
+        margin: 0;
+    }
+    .text p{
+        width: 100%;
+    }
+    .maps{
+        margin-left: 4em;
+    }
+}

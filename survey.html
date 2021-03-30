@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        Survey &bull; Madurai 
+    </title>
+    <meta charset="utf-8" />
+</head>
+	<body>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+        <header>
+        <div class="topnav" id="myTopnav">
+            <a href="survey.html" class="active">Survey</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="food.html">Food</a>
+            <a href="cultural_fests.html">Cultural Fests</a>
+            <a href="places.html">Places</a>
+            <a href="history.html">History</a>
+            <a href="index.html">Home</a>
+            <a href="index.html" class="logo-link"><img src="assets/images/Madurai_logo_small.jpg" class="logo" alt="madurai_logo" title="Madurai_logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </header>
+        <div class="main">
+            <h1>Feedback Form</h1>
+            <p class="msg-title">Tell us about your visit to Madurai, India!</p>
+            <hr />
+            <form action="response.php" method="post" class= "form" onsubmit="return validateForm()" autocomplete="off">
+                <div id="inputName">
+                    <label for="name"><span>Name:</span> <input id="name" type="text" name="name" /> </label>
+                </div><!-- ending div of inputName -->
+                <div id="inputEmail">
+                    <label for="email"><span>Email:</span><input id="email" type="email" name="email"></label>
+                </div>
+                <div class="inputNumber">
+                        <label for="group"><span>How many in your group?</span><input type="number" id="group" min="1" max="50"name="group" class="form_input"></label><!-- form label for group size input-->
+                </div><!-- inputNumber-->
+                <div class="inputDate">
+                    <label for="date"><span> When did you visit?</span>
+                        <input type="date" id="date" name="dateVisited" class="form_input">
+                    </label><!-- form label for date input-->
+                    <div id="dateFeedback">&nbsp; </div>
+                </div><!-- inputDate-->
+                <fieldset class="fav_place">
+                    <legend> Favorite Place Visited (select One) </legend>
+                    <div><label for="ma_temple"> <input type="radio" id="ma_temple" name="fav_visited" value="Meenakshi Amman Temple"/><span>Meenakshi Amman Temple</span></label></div>
+                    <div><label for="tn_palace"> <input type="radio" id="tn_palace" name="fav_visited" value="Thirumalai Nayakkar Palace" />Thirumalai Nayakkar Palace</label></div>
+                    <div><label for="mi_shop"> <input type="radio" id="mi_shop" name="fav_visited" value="Murugan Idli Shop" />Murugan Idli Shop</label></div>
+                    <div><label for="sk_konar"> <input type="radio" id="sk_konar" name="fav_visited" value="Simmakkal Konar" />Simmakkal Konar</label></div>
+                    <div><label for="athisayam"> <input type="radio" id="athisayam" name="fav_visited" value="Athisayam" />Athisayam</label></div>
+                </fieldset>
+                <div class="inputRating">
+                    <p>Overall Rate your visit to Madurai</p>
+                    <span>1 <input min="1" max="10" name="rating" step="1" list="set" type="range">
+                        <datalist id="set">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </datalist> 10</span><!-- end of rating bar-->
+                </div><!-- form_group-->
+                <input value="Submit" type="submit" class="submit-btn"> <!-- form submit button-->
+            </form><!-- form-->
+            <div class="push"></div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                    <a href="reference.html">Reference</a>
+                    <a href="rubric.html">Rubric</a>   
+                </div>
+                <div class="footer-info">
+                    Raghul Krishnan Copyright &copy; 2019, Madurai
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>

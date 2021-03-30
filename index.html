@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Righteous" rel="stylesheet">
+    <title>
+        Madurai
+    </title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="slideshowcontinous.js"></script>
+</head>
+	<body>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+        <header>
+        <img class="second-logo"src="assets/images/Madurai_logo_small.jpg" class="logo" alt="madurai_logo" title="Madurai_logo">
+        <div class="topnav" id="myTopnav">
+            <a href="survey.html">Survey</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="food.html">Food</a>
+            <a href="cultural_fests.html">Cultural Fests</a>
+            <a href="places.html">Places</a>
+            <a href="history.html">History</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="logo-link"><img src="assets/images/Madurai_logo_small.jpg" class="logo" alt="madurai_logo" title="Madurai_logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </header>
+        <div class="welcome-image">
+            <p class="text-in-image">Remember that happiness is a way of travel – not a destination. Come visit <span class="word-m">Madurai.</span></p>
+<!--            <div class="push"></div>-->
+        </div>
+        <div class="content">
+            <p class="welcome-txt">Madurai is one of the ancient cities of South India with a glorious history. It is famous for its world acclaimed Meenakshi Sundareswarar Temple. It is known for its rich historical landmarks such as Thirumalai Nayakar Palace. The city is known as the "The city that never sleeps" as shops here remain open overnight on all days. It is located on the banks of River Vaigai and has been a major settlement for two millennia.</p>
+            <img src="assets/images/places/meenakshi0.jpg" class="slideshow" id="slideshow_home" alt="Madurai" title="Madurai" width="400" height="300">
+        </div>
+        <div id="map">
+        </div>
+        <script>
+            function initMap() {
+            var location = {lat: 9.9252, lng: 78.1198};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 13,
+              center: location,
+              gestureHandling: 'cooperative'
+            });
+            var marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              title: 'Hello World!'
+            });
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8SuMMUgmiDxZ2_vFalb97xpeiLxHvpPQ&callback=initMap">
+        </script>
+        <footer>
+            <div class="footer-container">
+                <div class="links">
+                    <a href="contact.html">Contact</a>
+                    <a href="reference.html">Reference</a>
+                    <a href="rubric.html">Rubric</a>   
+                </div>
+                <div class="footer-info">
+                    Raghul Krishnan Copyright &copy; 2019, Madurai
+                </div>
+            </div>
+        </footer>
+	</body>
+</html>
